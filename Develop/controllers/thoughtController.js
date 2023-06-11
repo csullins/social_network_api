@@ -27,6 +27,7 @@ module.exports = {
   // Creates a new thought. Accepts a request body with the entire Thought object.
   // Because thoughts are associated with Users, we then update the User who created the thought and add the ID of the thought to the thoughts array
   async createThought(req, res) {
+    console.log('Thought being added.');
     try {
       const thought = await Thought.create(req.body);
       const user = await User.findOneAndUpdate(

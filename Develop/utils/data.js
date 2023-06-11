@@ -53,7 +53,7 @@ const thoughts = [
   {
     thoughtText: 'Need some WD40 for bionic legs.',
     createdAt: new Date(),
-    username: 'genGrieveous',
+    username: 'genGrieveous$',
     reactions: []
   },
   {
@@ -65,13 +65,13 @@ const thoughts = [
   {
     thoughtText: 'I find your lack of faith disturbing.',
     createdAt: new Date(),
-    username: 'darthdarth11',
+    username: 'darthdarth11!',
     reactions: []
   },
   {
     thoughtText: 'MORE!',
     createdAt: new Date(),
-    username: 'kyloren43',
+    username: 'kyloren43!',
     reactions: []
   },
   {
@@ -83,11 +83,15 @@ const thoughts = [
 ];
 
 const possibleReactions = [
-  'like',
-  'dislike',
-  'love',
-  'wow!',
-  'boo!',
+  {
+    reactionBody: 'Cool',
+  },
+  {
+    reactionBody: 'Lame!',
+  },
+  {
+    reactionBody: 'Like',
+  },
 ];
 
 // Export the functions for use in seed.js
