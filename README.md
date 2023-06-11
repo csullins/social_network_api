@@ -11,8 +11,6 @@
 
   Apache License 2.0
 
-  ![license](./assets/apache.png)
-
   ## Installation 
   
   🔧 1. Clone the repository locally <br> 
