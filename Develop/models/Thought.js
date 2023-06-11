@@ -1,4 +1,4 @@
-const { Schema, model, Types } = require('mongoose');
+const { Schema, model, Types } = require("mongoose");
 
 const reactionSchema = new Schema({
   reactionId: {
@@ -30,19 +30,19 @@ const thoughtSchema = new Schema(
       type: String,
       required: true,
       minlength: 1,
-      maxlength: 280
+      maxlength: 280,
     },
     createdAt: {
       type: Date,
       default: Date.now,
-      get: function(timestamp) {
-      // Formatting the timestamp using native JavaScript Date object
-      return new Date(timestamp).toLocaleString();
-      }
+      get: function (timestamp) {
+        // Formatting the timestamp using native JavaScript Date object
+        return new Date(timestamp).toLocaleString();
+      },
     },
     username: {
       type: String,
-      required: true
+      required: true,
     },
     reactions: [reactionSchema],
   },
@@ -53,13 +53,13 @@ const thoughtSchema = new Schema(
     id: false,
   }
 );
-  
-  // Virtual property for reactionCount
-  thoughtSchema.virtual('reactionCount').get(function() {
-    return this.reactions.length;
-  });
-  
-  // Initialize the Thought model
-  const Thought = model('Thought', thoughtSchema);
-  
-  module.exports = Thought;
+
+// Virtual property for reactionCount
+thoughtSchema.virtual("reactionCount").get(function () {
+  return this.reactions.length;
+});
+
+// Initialize the Thought model
+const Thought = model("Thought", thoughtSchema);
+
+module.exports = Thought;

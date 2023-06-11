@@ -1,6 +1,7 @@
 {
   "name": "Social-Network-API",
   "version": "1.0.0",
+  "author": "Camile Sullins"
   "description": "Easy to use API for a social network app",
   "main": "index.js",
   "license": "Apache License Version 2.0",

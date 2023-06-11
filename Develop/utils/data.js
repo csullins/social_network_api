@@ -1,96 +1,96 @@
 const users = [
   {
-    username: 'jabbatheHut34',
-    email: 'jabba@example.com',
+    username: "jabbatheHut34",
+    email: "jabba@example.com",
     thoughts: [],
-    friends: []
+    friends: [],
   },
   {
-    username: 'kyloren43!',
-    email: 'kylo@mail.com',
+    username: "kyloren43!",
+    email: "kylo@mail.com",
     thoughts: [],
-    friends: []
+    friends: [],
   },
   {
-    username: 'r2D2',
-    email: 'deetu@droids.com',
+    username: "r2D2",
+    email: "deetu@droids.com",
     thoughts: [],
-    friends: []
+    friends: [],
   },
   {
-    username: 'darthdarth11!',
-    email: 'vader@space.com',
+    username: "darthdarth11!",
+    email: "vader@space.com",
     thoughts: [],
-    friends: []
+    friends: [],
   },
   {
-    username: 'leiaSkywalker',
-    email: 'organa@mailwars.com',
+    username: "leiaSkywalker",
+    email: "organa@mailwars.com",
     thoughts: [],
-    friends: []
+    friends: [],
   },
   {
-    username: 'genGrieveous$',
-    email: 'octorobot@maul.com',
+    username: "genGrieveous$",
+    email: "octorobot@maul.com",
     thoughts: [],
-    friends: []
+    friends: [],
   },
   {
-    username: 'chewbacca4!$',
-    email: 'wookies@Nabu.com',
+    username: "chewbacca4!$",
+    email: "wookies@Nabu.com",
     thoughts: [],
-    friends: []
+    friends: [],
   },
 ];
 
 const thoughts = [
   {
-    thoughtText: 'May the force be with us all!',
+    thoughtText: "May the force be with us all!",
     createdAt: new Date(),
-    username: 'leiaSkywalker',
-    reactions: []
+    username: "leiaSkywalker",
+    reactions: [],
   },
   {
-    thoughtText: 'Need some WD40 for bionic legs.',
+    thoughtText: "Need some WD40 for bionic legs.",
     createdAt: new Date(),
-    username: 'genGrieveous$',
-    reactions: []
+    username: "genGrieveous$",
+    reactions: [],
   },
   {
-    thoughtText: 'Im a gangster slug.',
+    thoughtText: "Im a gangster slug.",
     createdAt: new Date(),
-    username: 'jabbatheHut34',
-    reactions: []
+    username: "jabbatheHut34",
+    reactions: [],
   },
   {
-    thoughtText: 'I find your lack of faith disturbing.',
+    thoughtText: "I find your lack of faith disturbing.",
     createdAt: new Date(),
-    username: 'darthdarth11!',
-    reactions: []
+    username: "darthdarth11!",
+    reactions: [],
   },
   {
-    thoughtText: 'MORE!',
+    thoughtText: "MORE!",
     createdAt: new Date(),
-    username: 'kyloren43!',
-    reactions: []
+    username: "kyloren43!",
+    reactions: [],
   },
   {
-    thoughtText: 'barrrggghhh',
+    thoughtText: "barrrggghhh",
     createdAt: new Date(),
-    username: 'chewbacca4!$',
-    reactions: []
+    username: "chewbacca4!$",
+    reactions: [],
   },
 ];
 
 const possibleReactions = [
   {
-    reactionBody: 'Cool',
+    reactionBody: "Cool",
   },
   {
-    reactionBody: 'Lame!',
+    reactionBody: "Lame!",
   },
   {
-    reactionBody: 'Like',
+    reactionBody: "Like",
   },
 ];
 
