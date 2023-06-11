@@ -12,8 +12,7 @@
   Apache License 2.0
 
   ## Installation 
-  
-  🔧 1. Clone the repository locally <br> 
+  1. Clone the repository locally <br> 
   2. Open the terminal at the Develop root folder and run npm i <br> 
   3. run  npm start
   
