@@ -27,24 +27,19 @@ module.exports = {
   // Creates a new thought. Accepts a request body with the entire Thought object.
   // Because thoughts are associated with Users, we then update the User who created the thought and add the ID of the thought to the thoughts array
   async createThought(req, res) {
-    console.log('Thought being added.');
     try {
       const thought = await Thought.create(req.body);
+      //get user associated with the thought
       const user = await User.findOneAndUpdate(
-        { _id: req.body.userId },
-        { $addToSet: { thoughts: thought._id } },
-        { new: true }
-      );
-
-      if (!user) {
-        return res.status(404).json({
-          message: 'Thought created, but found no user with that ID',
-        })
+        {_id: req.params.userId},
+        {$push: {thoughts: thought._id}},
+        {new: true}
+      )
+      if(!user){
+        throw new Error('User not found')
       }
-
-      res.json('Created the thought 🎉');
+      res.json(thought);
     } catch (err) {
-      console.log(err);
       res.status(500).json(err);
     }
   },
@@ -94,7 +89,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // Adds a reaction to a thought. This method is unique in that we add the entire body of the reaction rather than the ID with the mongodb $addToSet operator.
+  // Adds a reaction to a thought. This method is unique in that we add the entire body of the reaction rather than the ID with the mongodb 'addToSet' operator.
   async addReaction(req, res) {
     try {
       const thought = await Thought.findOneAndUpdate(
